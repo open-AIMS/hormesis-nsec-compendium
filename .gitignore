@@ -1,0 +1,7 @@
+ignore/
+.Rproj.user/
+*_files/
+*.html
+*.pdf
+vignette-fig-*.png
+*.knit.md
