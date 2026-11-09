@@ -95,7 +95,7 @@ fit_lettuce_bc5 <- bnec(weight ~ crf(log(conc + 0.1),
                                      model = "ecxhormebc5"),
                         data = lettuce, family = gaussian(), chains = 4,
                         cores = 4, iter = 2000, warmup = 1000, seed = 570,
-                        init = 0, control = list(adapt_delta = 0.99,
+                        init = 0, control = list(adapt_delta = 0.999,
                                                  max_treedepth = 12))
 saveRDS(fit_negri, "ignore/hormesis_data/fit_neclinhorme.rds")
 saveRDS(fit_negri_smooth, "ignore/hormesis_data/fit_ecxhormebc4.rds")

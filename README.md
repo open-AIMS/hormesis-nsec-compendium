@@ -8,9 +8,9 @@ This public research compendium contains the manuscript draft, exploratory desig
 - `analysis/hormesis_simulation.R`: Gaussian plug-in design simulation. It does not test Bayesian NSEC coverage.
 - `analysis/hormesis_negri.R`: local import of the Negri et al. marine workbook.
 - `analysis/hormesis_case_fits.R`: `bayesnec` fits and saved fitted objects.
-- `analysis/hormesis_fit_plots.R`: case-study figures and concentration-level checks from saved fits.
-- `data/`: lettuce observations and simulation summaries.
-- `figures/`: case-study figures generated from the saved fits.
+- `analysis/hormesis_fit_plots.R`: candidate and model-averaged curves, model weights, ECNSEC values and concentration-level checks from saved fits.
+- `data/`: lettuce observations, simulation summaries and case-study estimate summaries.
+- `figures/`: candidate and model-averaged case-study figures generated from the saved fits.
 
 ## Reproduction
 
