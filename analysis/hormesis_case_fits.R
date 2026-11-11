@@ -91,6 +91,9 @@ refit_longer <- function(fit, adapt_delta) {
 }
 fit_negri <- refit_longer(fit_negri, 0.999)
 fit_marine_bc5 <- refit_longer(fit_marine_bc5, 0.999)
+# nechorme4 failed on Rhat and ESS without divergences, so refit it longer under
+# the same prior before the screen can exclude it.
+fit_marine_nechorme4 <- refit_longer(fit_marine_nechorme4, 0.995)
 fit_lettuce_nechorme4 <- refit_longer(fit_lettuce_nechorme4, 0.999)
 fit_lettuce_ecxhormebc4 <- refit_longer(fit_lettuce_ecxhormebc4, 0.99)
 fit_lettuce_ecxhormebc4 <- refit_longer(fit_lettuce_ecxhormebc4, 0.9999)
